@@ -1,0 +1,46 @@
+264 inits
+264 Waiting: 101(0) 102(0) 103(0) 104(0) 105(0) 106(0) 107(0) 108(0) 109(0) 110(0) 111(0) 112(0) 113(0) 114(0) 115(0) Ready: t1() t2() t4() 
+357 Arc 101 wakes up, goes to t2
+357 Arc 101 is blocked, waiting for t2 opening
+357 Arc 102 wakes up, goes to t1
+357 Arc 103 wakes up, goes to t1
+357 Arc 104 wakes up, goes to t1
+357 Arc 105 wakes up, goes to t1
+357 Arc 106 wakes up, goes to t1
+357 Arc 107 wakes up, goes to t1
+357 Arc 108 wakes up, goes to t4
+357 Arc 108 is blocked, waiting for t4 opening
+357 Arc 109 wakes up, goes to t2
+357 Arc 109 is blocked, waiting for t2 opening
+357 Arc 110 wakes up, goes to t2
+357 Arc 110 is blocked, waiting for t2 opening
+357 Arc 111 wakes up, goes to t2
+357 Arc 111 is blocked, waiting for t2 opening
+357 Arc 112 wakes up, goes to t1
+357 Arc 113 wakes up, goes to t1
+357 Arc 114 wakes up, goes to t1
+357 Arc 115 wakes up, goes to t1
+454 Arc 102 is sent to t1
+454 Waiting: Ready: t1(103, 104, 105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+454 Arc 103 is sent to t1
+454 Waiting: Ready: t1(104, 105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 Arc 104 is sent to t1
+455 Waiting: Ready: t1(105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 Arc 105 is sent to t1
+455 Waiting: Ready: t1(106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 Arc 106 is sent to t1
+455 Waiting: Ready: t1(107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 Arc 107 is sent to t1
+456 Waiting: Ready: t1(112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 Arc 112 is sent to t1
+456 Waiting: Ready: t1(113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 Arc 113 is sent to t1
+456 Waiting: Ready: t1(114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+457 Arc 114 is sent to t1
+457 Waiting: Ready: t1(115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+457 Arc 115 is sent to t1
+457 Waiting: Ready: t1() t2(101, 109, 110, 111, ) t4(108, ) 
+1331 Arc 101 is sent to t2
+1520 Waiting: Ready: t1() t2(109, 110, 111, ) t4(108, ) 
+2001 Stopped: time is out.
+2001 Waiting: Ready: t1() t2(109, 110, 111, ) t4(108, ) 

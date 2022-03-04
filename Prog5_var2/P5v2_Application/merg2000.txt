@@ -1,0 +1,162 @@
+264 [p1] inits
+264 [p1] Waiting: 101(0) 102(0) 103(0) 104(0) 105(0) 106(0) 107(0) 108(0) 109(0) 110(0) 111(0) 112(0) 113(0) 114(0) 115(0) Ready: t1() t2() t4() 
+285 [p2] inits
+285 [p2] Waiting: Ready: t3() t4() 
+305 [p3] inits
+305 [p3] Waiting: Ready: t4() 
+326 [p4] inits
+326 [p4] Waiting: Ready: t5() 
+346 [p5] inits
+347 [p5] Waiting: Ready: t2() t5() 
+357 [p1] Arc 101 wakes up, goes to t2
+357 [p1] Arc 101 is blocked, waiting for t2 opening
+357 [p1] Arc 102 wakes up, goes to t1
+357 [p1] Arc 103 wakes up, goes to t1
+357 [p1] Arc 104 wakes up, goes to t1
+357 [p1] Arc 105 wakes up, goes to t1
+357 [p1] Arc 106 wakes up, goes to t1
+357 [p1] Arc 107 wakes up, goes to t1
+357 [p1] Arc 108 wakes up, goes to t4
+357 [p1] Arc 108 is blocked, waiting for t4 opening
+357 [p1] Arc 109 wakes up, goes to t2
+357 [p1] Arc 109 is blocked, waiting for t2 opening
+357 [p1] Arc 110 wakes up, goes to t2
+357 [p1] Arc 110 is blocked, waiting for t2 opening
+357 [p1] Arc 111 wakes up, goes to t2
+357 [p1] Arc 111 is blocked, waiting for t2 opening
+357 [p1] Arc 112 wakes up, goes to t1
+357 [p1] Arc 113 wakes up, goes to t1
+357 [p1] Arc 114 wakes up, goes to t1
+357 [p1] Arc 115 wakes up, goes to t1
+454 [p1] Arc 102 is sent to t1
+454 [p1] Waiting: Ready: t1(103, 104, 105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+454 [p1] Arc 103 is sent to t1
+454 [p1] Waiting: Ready: t1(104, 105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+454 [p2] Arc 102 is received from t1
+454 [p2] Arc 102 will sleep until 695 ms
+454 [p2] Waiting: Ready: t3() t4() 
+454 [p2] Waiting: 102(695) Ready: t3() t4() 
+454 [p2] Arc 103 is received from t1
+454 [p2] Arc 103 will sleep until 698 ms
+454 [p2] Waiting: 102(695) Ready: t3() t4() 
+454 [p2] Waiting: 102(695) 103(698) Ready: t3() t4() 
+455 [p1] Arc 104 is sent to t1
+455 [p1] Waiting: Ready: t1(105, 106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 [p1] Arc 105 is sent to t1
+455 [p1] Waiting: Ready: t1(106, 107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 [p1] Arc 106 is sent to t1
+455 [p1] Waiting: Ready: t1(107, 112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+455 [p2] Arc 104 is received from t1
+455 [p2] Arc 104 will sleep until 1382 ms
+455 [p2] Waiting: 102(695) 103(698) Ready: t3() t4() 
+455 [p2] Waiting: 102(695) 103(698) 104(1382) Ready: t3() t4() 
+455 [p2] Arc 105 is received from t1
+455 [p2] Arc 105 will sleep until 722 ms
+455 [p2] Waiting: 102(695) 103(698) 104(1382) Ready: t3() t4() 
+455 [p2] Waiting: 102(695) 103(698) 105(722) 104(1382) Ready: t3() t4() 
+455 [p2] Arc 106 is received from t1
+455 [p2] Arc 106 will sleep until 1401 ms
+455 [p2] Waiting: 102(695) 103(698) 105(722) 104(1382) Ready: t3() t4() 
+455 [p2] Waiting: 102(695) 103(698) 105(722) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p1] Arc 107 is sent to t1
+456 [p1] Waiting: Ready: t1(112, 113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 [p1] Arc 112 is sent to t1
+456 [p1] Waiting: Ready: t1(113, 114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 [p1] Arc 113 is sent to t1
+456 [p1] Waiting: Ready: t1(114, 115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+456 [p2] Arc 107 is received from t1
+456 [p2] Arc 107 will sleep until 1161 ms
+456 [p2] Waiting: 102(695) 103(698) 105(722) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p2] Waiting: 102(695) 103(698) 105(722) 107(1161) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p2] Arc 112 is received from t1
+456 [p2] Arc 112 will sleep until 920 ms
+456 [p2] Waiting: 102(695) 103(698) 105(722) 107(1161) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p2] Arc 113 is received from t1
+456 [p2] Arc 113 will sleep until 1178 ms
+456 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 104(1382) 106(1401) Ready: t3() t4() 
+456 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 113(1178) 104(1382) 106(1401) Ready: t3() t4() 
+457 [p1] Arc 114 is sent to t1
+457 [p1] Waiting: Ready: t1(115, ) t2(101, 109, 110, 111, ) t4(108, ) 
+457 [p1] Arc 115 is sent to t1
+457 [p1] Waiting: Ready: t1() t2(101, 109, 110, 111, ) t4(108, ) 
+457 [p2] Arc 114 is received from t1
+457 [p2] Arc 114 will sleep until 1186 ms
+457 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 113(1178) 104(1382) 106(1401) Ready: t3() t4() 
+457 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4() 
+457 [p2] Arc 115 is received from t1
+457 [p2] Arc 115 will sleep until 1091 ms
+457 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 107(1161) 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4() 
+457 [p2] Waiting: 102(695) 103(698) 105(722) 112(920) 115(1091) 107(1161) 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4() 
+696 [p2] Arc 102 wakes up, goes to t4
+696 [p2] Arc 102 is blocked, waiting for t4 opening
+699 [p2] Arc 103 wakes up, goes to t3
+699 [p2] Arc 103 is sent to t3
+699 [p2] Waiting: 105(722) 112(920) 115(1091) 107(1161) 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4(102, ) 
+699 [p4] Arc 103 is received from t3
+699 [p4] Arc 103 will sleep until 2001 ms
+699 [p4] Waiting: Ready: t5() 
+699 [p4] Waiting: 103(2001) Ready: t5() 
+699 [p5] Arc 103 is received from t3
+699 [p5] Arc 103 will sleep until 1330 ms
+699 [p5] Waiting: Ready: t2() t5() 
+699 [p5] Waiting: 103(1330) Ready: t2() t5() 
+723 [p2] Arc 105 wakes up, goes to t4
+723 [p2] Arc 105 is blocked, waiting for t4 opening
+921 [p2] Arc 112 wakes up, goes to t3
+921 [p2] Arc 112 is sent to t3
+921 [p2] Waiting: 115(1091) 107(1161) 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4(102, 105, ) 
+921 [p4] Arc 112 is received from t3
+921 [p4] Arc 112 will sleep until 2188 ms
+921 [p4] Waiting: 103(2001) Ready: t5() 
+921 [p4] Waiting: 103(2001) 112(2188) Ready: t5() 
+921 [p5] Arc 112 is received from t3
+921 [p5] Arc 112 will sleep until 2240 ms
+921 [p5] Waiting: 103(1330) Ready: t2() t5() 
+921 [p5] Waiting: 103(1330) 112(2240) Ready: t2() t5() 
+1092 [p2] Arc 115 wakes up, goes to t4
+1092 [p2] Arc 115 is blocked, waiting for t4 opening
+1162 [p2] Arc 107 wakes up, goes to t3
+1162 [p2] Arc 107 is sent to t3
+1162 [p2] Waiting: 113(1178) 114(1186) 104(1382) 106(1401) Ready: t3() t4(102, 105, 115, ) 
+1162 [p4] Arc 107 is received from t3
+1162 [p4] Arc 107 will sleep until 1917 ms
+1162 [p4] Waiting: 103(2001) 112(2188) Ready: t5() 
+1162 [p4] Waiting: 107(1917) 103(2001) 112(2188) Ready: t5() 
+1162 [p5] Arc 107 is received from t3
+1162 [p5] Arc 107 will sleep until 2153 ms
+1162 [p5] Waiting: 103(1330) 112(2240) Ready: t2() t5() 
+1162 [p5] Waiting: 103(1330) 107(2153) 112(2240) Ready: t2() t5() 
+1179 [p2] Arc 113 wakes up, goes to t4
+1179 [p2] Arc 113 is blocked, waiting for t4 opening
+1187 [p2] Arc 114 wakes up, goes to t4
+1187 [p2] Arc 114 is blocked, waiting for t4 opening
+1331 [p1] Arc 101 is sent to t2
+1331 [p5] Arc 103 wakes up, goes to t2
+1383 [p2] Arc 104 wakes up, goes to t4
+1520 [p1] Waiting: Ready: t1() t2(109, 110, 111, ) t4(108, ) 
+1520 [p3] Arc 101 is received from t2
+1524 [p3] Arc 101 will sleep until 2417 ms
+1524 [p3] Waiting: Ready: t4() 
+1524 [p3] Waiting: 101(2417) Ready: t4() 
+1524 [p5] Arc 103 is sent to t2
+1534 [p2] Arc 104 is blocked, waiting for t4 opening
+1534 [p2] Arc 106 wakes up, goes to t4
+1534 [p2] Arc 106 is blocked, waiting for t4 opening
+1534 [p3] Arc 103 is received from t2
+1534 [p3] Arc 103 will sleep until 2967 ms
+1534 [p3] Waiting: 101(2417) Ready: t4() 
+1534 [p3] Waiting: 101(2417) 103(2967) Ready: t4() 
+1534 [p5] Waiting: 107(2153) 112(2240) Ready: t2() t5() 
+1918 [p4] Arc 107 wakes up, goes to t5
+1918 [p4] Arc 107 is blocked, waiting for t5 opening
+2001 [p1] Stopped: time is out.
+2001 [p1] Waiting: Ready: t1() t2(109, 110, 111, ) t4(108, ) 
+2001 [p2] Stopped: time is out.
+2001 [p2] Waiting: Ready: t3() t4(102, 105, 115, 113, 114, 104, 106, ) 
+2001 [p3] Stopped: time is out.
+2001 [p3] Waiting: 101(2417) 103(2967) Ready: t4() 
+2001 [p4] Stopped: time is out.
+2001 [p4] Waiting: 103(2001) 112(2188) Ready: t5(107, ) 
+2001 [p5] Stopped: time is out.
+2001 [p5] Waiting: 107(2153) 112(2240) Ready: t2() t5() 

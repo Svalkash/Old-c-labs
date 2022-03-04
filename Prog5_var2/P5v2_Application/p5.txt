@@ -1,0 +1,19 @@
+346 inits
+347 Waiting: Ready: t2() t5() 
+699 Arc 103 is received from t3
+699 Arc 103 will sleep until 1330 ms
+699 Waiting: Ready: t2() t5() 
+699 Waiting: 103(1330) Ready: t2() t5() 
+921 Arc 112 is received from t3
+921 Arc 112 will sleep until 2240 ms
+921 Waiting: 103(1330) Ready: t2() t5() 
+921 Waiting: 103(1330) 112(2240) Ready: t2() t5() 
+1162 Arc 107 is received from t3
+1162 Arc 107 will sleep until 2153 ms
+1162 Waiting: 103(1330) 112(2240) Ready: t2() t5() 
+1162 Waiting: 103(1330) 107(2153) 112(2240) Ready: t2() t5() 
+1331 Arc 103 wakes up, goes to t2
+1524 Arc 103 is sent to t2
+1534 Waiting: 107(2153) 112(2240) Ready: t2() t5() 
+2001 Stopped: time is out.
+2001 Waiting: 107(2153) 112(2240) Ready: t2() t5() 

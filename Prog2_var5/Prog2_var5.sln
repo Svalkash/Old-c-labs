@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P2v5_Library", "P2v5_Library\P2v5_Library.vcxproj", "{F17C8D5F-9A58-4029-9FC8-490626CA62D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P2v5_Application", "P2v5_Application\P2v5_Application.vcxproj", "{27AFB0CE-0C7A-4FC5-9430-F4319FA435CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8} = {F17C8D5F-9A58-4029-9FC8-490626CA62D8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_Library", "gtest_Library\gtest_Library.vcxproj", "{AF564F37-5786-4503-8E08-F74D0032AF95}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P2v5_Testing", "P2v5_Testing\P2v5_Testing.vcxproj", "{DF1F918B-03BD-41C6-B474-FF6C9A71DADF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF564F37-5786-4503-8E08-F74D0032AF95} = {AF564F37-5786-4503-8E08-F74D0032AF95}
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8} = {F17C8D5F-9A58-4029-9FC8-490626CA62D8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8}.Debug|Win32.Build.0 = Debug|Win32
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8}.Release|Win32.ActiveCfg = Release|Win32
+		{F17C8D5F-9A58-4029-9FC8-490626CA62D8}.Release|Win32.Build.0 = Release|Win32
+		{27AFB0CE-0C7A-4FC5-9430-F4319FA435CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27AFB0CE-0C7A-4FC5-9430-F4319FA435CE}.Debug|Win32.Build.0 = Debug|Win32
+		{27AFB0CE-0C7A-4FC5-9430-F4319FA435CE}.Release|Win32.ActiveCfg = Release|Win32
+		{27AFB0CE-0C7A-4FC5-9430-F4319FA435CE}.Release|Win32.Build.0 = Release|Win32
+		{AF564F37-5786-4503-8E08-F74D0032AF95}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF564F37-5786-4503-8E08-F74D0032AF95}.Debug|Win32.Build.0 = Debug|Win32
+		{AF564F37-5786-4503-8E08-F74D0032AF95}.Release|Win32.ActiveCfg = Release|Win32
+		{AF564F37-5786-4503-8E08-F74D0032AF95}.Release|Win32.Build.0 = Release|Win32
+		{DF1F918B-03BD-41C6-B474-FF6C9A71DADF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF1F918B-03BD-41C6-B474-FF6C9A71DADF}.Debug|Win32.Build.0 = Debug|Win32
+		{DF1F918B-03BD-41C6-B474-FF6C9A71DADF}.Release|Win32.ActiveCfg = Release|Win32
+		{DF1F918B-03BD-41C6-B474-FF6C9A71DADF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

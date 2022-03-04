@@ -1,0 +1,12 @@
+305 inits
+305 Waiting: Ready: t4() 
+1520 Arc 101 is received from t2
+1524 Arc 101 will sleep until 2417 ms
+1524 Waiting: Ready: t4() 
+1524 Waiting: 101(2417) Ready: t4() 
+1534 Arc 103 is received from t2
+1534 Arc 103 will sleep until 2967 ms
+1534 Waiting: 101(2417) Ready: t4() 
+1534 Waiting: 101(2417) 103(2967) Ready: t4() 
+2001 Stopped: time is out.
+2001 Waiting: 101(2417) 103(2967) Ready: t4() 
