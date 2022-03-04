@@ -1,0 +1,22 @@
+timeG
+gold
+wallNumber
+(Walls)
+	name x y curHP
+towerNumber
+(Towers)
+	name x y lvl timeW
+(Castle)
+	name x y lvl curHP timeW
+spawnNumber
+(Spawns)
+	x y timeW
+	spawnItemNumber
+	{spawnItems}
+		type name x y BASEmaxHP curHP BASEregHP BASEcoeff BASEspeed timeW
+		<aura> maxHP regHP coeff speed radius
+		exitTime
+enemyNumber
+(Enemies)
+	type name x y BASEmaxHP curHP BASEregHP BASEcoeff BASEspeed timeW
+	<aura> maxHP regHP coeff speed radius
